@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="au.edu.utas.dangmt.kit305_ass2">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KIT305_Ass2">
+        <activity
+            android:name=".data.HoldExerciseEndGameScreen"
+            android:exported="false" />
+        <activity
+            android:name=".exercises.HoldExerciseGame"
+            android:exported="false" />
+        <activity
+            android:name=".exercises.HoldExerciseOptions"
+            android:exported="false" />
+        <activity
+            android:name=".history.TouchExerciseSingleRecord"
+            android:exported="false" />
+        <activity
+            android:name=".history.TouchExerciseHistory"
+            android:exported="false" />
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.KIT305_Ass2.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".exercises.TouchExerciseEndGameScreen"
+            android:exported="false" />
+        <activity
+            android:name=".exercises.TouchExerciseGame"
+            android:exported="false" />
+        <activity
+            android:name=".exercises.TouchExerciseOptions"
+            android:exported="false" /> <!-- Setup FileProvider for saving picture -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="au.edu.utas.dangmt.kit305_ass2"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

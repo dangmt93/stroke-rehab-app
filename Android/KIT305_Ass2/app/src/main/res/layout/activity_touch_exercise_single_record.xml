@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".history.TouchExerciseSingleRecord">
+
+    <TextView
+        android:id="@+id/headingHistory3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_top_margin"
+        android:text="History"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/heading_textsize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_left_right_margin"
+        android:text="Back"
+        android:textSize="@dimen/button_textsize"
+        app:layout_constraintBottom_toBottomOf="@+id/headingHistory3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headingHistory3" />
+
+    <Button
+        android:id="@+id/menuBtn"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="@dimen/view_left_right_margin"
+        android:drawableLeft="@drawable/ic_menu_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/headingHistory3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headingHistory3" />
+
+    <Button
+        android:id="@+id/exportButton"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:drawableLeft="@drawable/ic_export_icon"
+        android:text="Export"
+        android:textSize="@dimen/button_textsize"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/menuBtn"
+        app:layout_constraintTop_toTopOf="@+id/menuBtn" />
+
+    <Button
+        android:id="@+id/addImageButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:text="Add image"
+        android:textSize="@dimen/button_textsize"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/exportButton"
+        app:layout_constraintStart_toStartOf="@+id/exportButton"
+        app:layout_constraintTop_toBottomOf="@+id/exportButton" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@android:drawable/ic_delete"
+        android:text="Delete"
+        android:textColor="@color/red"
+        android:textSize="@dimen/button_textsize"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/exportButton"
+        app:layout_constraintStart_toStartOf="@+id/exportButton"
+        app:layout_constraintTop_toBottomOf="@+id/addImageButton" />
+
+    <TextView
+        android:id="@+id/headingText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_left_right_margin"
+        android:layout_marginTop="80dp"
+        android:text="Touch Exercise"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/sub_heading_textsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingHistory3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detailsConstraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_left_right_margin"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingText2">
+
+        <TextView
+            android:id="@+id/startTimeTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="start"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/table_textsize"
+            app:layout_constraintStart_toEndOf="@+id/startTimeHeading2"
+            app:layout_constraintTop_toTopOf="@+id/startTimeHeading2" />
+
+        <TextView
+            android:id="@+id/startTimeHeading2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="Start time"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/endTimeHeading2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="@dimen/end_time_col_layoutweight"
+            android:text="End time"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startTimeHeading2" />
+
+        <TextView
+            android:id="@+id/endTimeTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="end"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/table_textsize"
+            app:layout_constraintStart_toStartOf="@+id/startTimeTxt"
+            app:layout_constraintTop_toTopOf="@+id/endTimeHeading2" />
+
+        <TextView
+            android:id="@+id/exerciseModeHeading2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="@dimen/mode_col_layoutweight"
+            android:text="Mode"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/endTimeHeading2" />
+
+        <TextView
+            android:id="@+id/modeTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="mode"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/table_textsize"
+            app:layout_constraintStart_toStartOf="@+id/endTimeTxt"
+            app:layout_constraintTop_toTopOf="@+id/exerciseModeHeading2" />
+
+        <TextView
+            android:id="@+id/statusHeading2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="@dimen/status_col_layoutweight"
+            android:text="Status"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exerciseModeHeading2" />
+
+        <TextView
+            android:id="@+id/statusTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="status"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/table_textsize"
+            app:layout_constraintStart_toStartOf="@+id/modeTxt"
+            app:layout_constraintTop_toTopOf="@+id/statusHeading2" />
+
+        <TextView
+            android:id="@+id/nRepsHeading2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="@dimen/n_reps_layoutweight"
+            android:text="#Reps"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statusHeading2" />
+
+        <TextView
+            android:id="@+id/nRepsTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="nReps"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/table_textsize"
+            app:layout_constraintStart_toStartOf="@+id/statusTxt"
+            app:layout_constraintTop_toTopOf="@+id/nRepsHeading2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/buttonListHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of button pressed"
+        android:textColor="@color/black"
+        android:textSize="@dimen/table_textsize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/buttonListHeadingSection"
+        app:layout_constraintTop_toTopOf="@+id/detailsConstraintLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_left_right_margin"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsConstraintLayout">
+
+        <TextView
+            android:id="@+id/nButtonsTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="nButtons"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/table_textsize"
+            app:layout_constraintStart_toStartOf="@+id/buttonIndicationTxt"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/buttonIndicationTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="indication"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/table_textsize"
+            app:layout_constraintStart_toEndOf="@+id/nextButtonIndicationHeading"
+            app:layout_constraintTop_toBottomOf="@+id/randomOrderTxt" />
+
+        <TextView
+            android:id="@+id/randomOrderTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="randomOrder"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/table_textsize"
+            app:layout_constraintStart_toStartOf="@+id/buttonIndicationTxt"
+            app:layout_constraintTop_toBottomOf="@+id/nButtonsTxt" />
+
+        <TextView
+            android:id="@+id/buttonSizeTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="buttonSize"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/table_textsize"
+            app:layout_constraintStart_toStartOf="@+id/buttonIndicationTxt"
+            app:layout_constraintTop_toBottomOf="@+id/buttonIndicationTxt" />
+
+        <TextView
+            android:id="@+id/randomOrderHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="Random Order"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nButtonsHeading" />
+
+        <TextView
+            android:id="@+id/nextButtonIndicationHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="Button Indication"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/randomOrderHeading" />
+
+        <TextView
+            android:id="@+id/buttonSizeHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="Button Size"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nextButtonIndicationHeading" />
+
+        <TextView
+            android:id="@+id/nButtonsHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="#Buttons"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonListHeadingSection"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/view_left_right_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonListHeading">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Time"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/table_textsize" />
+
+            <TextView
+                android:id="@+id/buttonPressedText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button Pressed"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/table_textsize" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/buttonPressedList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/view_left_right_margin"
+        android:layout_marginBottom="@dimen/view_left_right_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonListHeadingSection"
+        app:layout_constraintTop_toBottomOf="@+id/buttonListHeadingSection" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout10"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout10"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout10"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <!--  All screens  -->
+    <dimen name="heading_textsize">50sp</dimen>
+    <dimen name="sub_heading_textsize">35sp</dimen>
+    <dimen name="button_textsize">20sp</dimen>
+    <dimen name="heading_margin_top">20sp</dimen>
+    <dimen name="view_left_right_margin">50sp</dimen>
+
+    <!--  Menu  -->
+    <dimen name="menu_container_layout_height">80sp</dimen>
+    <dimen name="menu_container_left_right_margin">50sp</dimen>
+    <dimen name="menu_child_left_right_constraints">30sp</dimen>
+    <dimen name="menu_text_textsize">25sp</dimen>
+
+
+    <!--  Activity screens  -->
+    <dimen name="activity_top_margin">30sp</dimen>
+
+    <!--  Exercises screen  -->
+    <dimen name="welcome_msg_size">40sp</dimen>
+    <dimen name="exercise_button_size">60sp</dimen>
+
+    <!--  History screens  -->
+    <dimen name="table_textsize">20sp</dimen>
+    <dimen name="start_time_col_layoutweight">2</dimen>
+    <dimen name="end_time_col_layoutweight">2</dimen>
+    <dimen name="mode_col_layoutweight">3</dimen>
+    <dimen name="status_col_layoutweight">2</dimen>
+    <dimen name="n_reps_layoutweight">1</dimen>
+
+
+</resources>

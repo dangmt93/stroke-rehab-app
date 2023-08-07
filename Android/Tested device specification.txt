@@ -1,0 +1,3 @@
+App was tested on:
+- Device: Pixel C API 30
+- Orientation: Portrait

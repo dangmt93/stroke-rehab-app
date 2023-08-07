@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_border"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/startTimeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@dimen/start_time_col_layoutweight"
+        android:text="Start time"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/table_textsize" />
+
+    <TextView
+        android:id="@+id/endTimeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@dimen/start_time_col_layoutweight"
+        android:text="End time"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/table_textsize" />
+
+    <TextView
+        android:id="@+id/exerciseModeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@dimen/mode_col_layoutweight"
+        android:text="Mode"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/table_textsize" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@dimen/status_col_layoutweight"
+        android:text="Status"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/table_textsize" />
+
+    <TextView
+        android:id="@+id/nRepsText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@dimen/n_reps_layoutweight"
+        android:text="#Reps"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/table_textsize" />
+</LinearLayout>

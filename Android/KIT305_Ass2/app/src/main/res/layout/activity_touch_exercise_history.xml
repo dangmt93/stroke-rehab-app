@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".history.TouchExerciseHistory">
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_left_right_margin"
+        android:text="Back"
+        android:textSize="@dimen/button_textsize"
+        app:layout_constraintBottom_toBottomOf="@+id/headingHistory2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headingHistory2" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/view_left_right_margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/view_left_right_margin"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/headingHistory2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_top_margin"
+        android:text="History"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/heading_textsize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/view_left_right_margin"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="@dimen/view_left_right_margin"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingText">
+
+        <TextView
+            android:id="@+id/startTimeHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/start_time_col_layoutweight"
+            android:text="Start time"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/endTimeHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/end_time_col_layoutweight"
+            android:text="End time"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/exerciseModeHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/mode_col_layoutweight"
+            android:text="Mode"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/statusHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/status_col_layoutweight"
+            android:text="Status"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nRepsHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/n_reps_layoutweight"
+            android:text="#Reps"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/table_textsize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/touchRecordList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/view_left_right_margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/view_left_right_margin"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <TextView
+        android:id="@+id/headingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_left_right_margin"
+        android:layout_marginTop="80dp"
+        android:text="Touch Exercise"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/sub_heading_textsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingHistory2" />
+
+    <TextView
+        android:id="@+id/recordCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:textColor="@color/black"
+        android:textSize="@dimen/table_textsize"
+        app:layout_constraintBottom_toBottomOf="@+id/headingText"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/headingText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

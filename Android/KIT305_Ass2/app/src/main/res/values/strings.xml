@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">StrokeRehab</string>
+    <string name="tab_text_exercises">Exercises</string>
+    <string name="tab_text_statistics">Statistics</string>
+    <string name="tab_text_history">History</string>
+    <string name="tab_text_settings">Settings</string>
+
+    <!--  Exercises screen  -->
+    <string name="welcome_msg">WELCOME BACK</string>
+
+    <!--  Touch Exercise options and game screens  -->
+    <string-array name="goal_mode">
+        <item>Repetition</item>
+        <item>Time limit</item>
+    </string-array>
+    <string name="touch_guide_msg">Click button %d</string>
+
+    <!--  Touch Exercise details  -->
+    <string name="exercise_mode_freeplay_key">freeplay</string>
+    <string name="exercise_mode_goal_key">goal</string>
+    <string name="goal_mode_repetition_key">rep</string>
+    <string name="goal_mode_time_limit_key">time</string>
+
+    <!--  Hold Exercise game screens  -->
+    <string name="hold_guide_msg">Hold button for 3 seconds</string>
+
+    <!--  History single record screen  -->
+    <string name="delete_dialog_title">Delete the record?</string>
+    <string name="delete_dialog_message">Do you really want to delete this record? Record will be deleted permanently.</string>
+
+
+</resources>
