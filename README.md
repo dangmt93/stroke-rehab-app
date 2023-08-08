@@ -1,24 +1,35 @@
 ﻿# Stroke Rehabilitation App
 
-A simple mobile app aimed at helping stroke patients recover their motor skills and coordination through repetitions of simple exercises.
+## 1. Introduction
+This is a simple mobile app aimed at helping stroke patients recover their motor skills, coordination, and a certain extent, cognitive capabilities, through repetitions of simple exercises. 
 
-There is a prototype designed using Balsamiq Wireframe,subsequently optimizing the user interface and user experience through comprehensive usability testing.
+There are a prototype, designed using Balsamiq Wireframe, and 2 versions of this app (Android and iOS). Both versions use Firebase to store patients' data and progress.
 
-There are 2 versions of this app (Android and iOS). Both versions use Firebase to store patients' data and progress.
-
-
-
-
-Go from prototype to 
-
-"Touch" exercise, where 
-
-"Swipe" exercise has been replaced by a simple "Hold" exercise. because o	Limit to hands / fingers + cognitive function
+### Scope
+- Given the constrained range of motion and cognitive function often experienced by stroke patients, the app was designed with the presumption that their caregiver will navigate th interface. The patients' interaction is primarily focused on engaging with the exercises.
+- The app was designed for a single user - one patient using the app exclusively. It does not incorporate login or user switching features, and the database stores data for the individual user.
+- Responsive design was not taken into account; both Android and iOS versions were designed for specific device dimensions.
 
 
+## 2. Features
+There are 2 distinct exercises in the app:
+1. "Touch" exercise: the user is prompted to tap three buttons labeled as 1, 2, and 3 in the correct **ascending sequence**. In each iteration, all three buttons are displayed simultaneously in random positions on the screen. Accurately tapping the correct button removes it from view. Successfully completion of tapping all three buttons sequentially counts as one "repetition", leading to the next "repetition". 
+2. "Hold": the exercise is similar to the "Touch" exercise, with a variation: Instead of tapping, the user is required to tap and hold down the correct button for a duration of 3 seconds to register success and remove it from the screen.
 
+- For each exercise, there are:
+  -  2 **modes**:
+      - Goal Mode: the user can set a objective to complete, choosing either a specific number of repetitions or a time limit for the exercise
+      - Free-Play Mode: the user can engage in unlimited practice sessions
 
-Scope
--	Assume their carer will navigate through the app  patient only interact with exercises
-o	single user (only 1 patient using the app) (no login / user switching implemented)
-	data stored in database for only 1 single user
+  - A variety of **exercise customisation options**, including:
+    - Adjusting the number of buttons, from 3 up to 5
+    - Opting for buttons to appear randomly or in a designated sequence
+    - Activating a visual indication for the next button in the sequence
+    - Modifying the size of the buttons.
+
+Other features:
+- View total time spent and repetitions completed for each exercise
+- Access their history of attempts, either completed or uncompleted, including start and end times, repetition count, exercise mode, customisation options, and a detailed log of button tapped
+- Easily remove any undesired attempts from their history
+- Share their attempts to other applications (e.g. notes) by exporting data in CSV text format
+- Edit their username
