@@ -1,0 +1,6 @@
+﻿# Stroke Rehabilitation App - Prototype
+
+This is a prototype designed using Balsamiq Wireframes, which was then refined to enhance its features based on user feedback obtained from thorough usability testing to align with [Design Principles](https://medium.com/@sachinrekhi/don-normans-principles-of-interaction-design-51025a2c0f33) and [Usability Goals](https://www.nngroup.com/articles/usability-101-introduction-to-usability/).
+- Usability testing was conducted using the think-aloud method, where users vocalized their thought processes while navigating the app. Their performance was evaluated and scored according to their ability to navigate the app effectively. Subsequent improvements were implemented to address any challenges users encountered during the testing.
+
+- Note that the "Swipe" exercise, initially included in the prototype and requiring the user to swipe their fingers to manoeuvre an object and avoid incoming projectiles, has been substituted. This decision was made due to its complexity, which could pose challenges for stroke patients participating in the activity.
