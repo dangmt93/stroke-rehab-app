@@ -33,3 +33,16 @@ Other features:
 - Easily remove any undesired attempts from their history
 - Share their attempts to other applications (e.g. notes) by exporting data in CSV text format
 - Edit their username
+
+## 3. Some app screenshots
+### Android
+<img src="./Android/App%20screenshots/Exercise%20main.PNG" alt="App Front" width="400"/>
+<img src="./Android/App%20screenshots/Touch options.PNG" alt="Touch Exercise Customisation" width="400"/>
+<img src="./Android/App%20screenshots/Touch rep.PNG" alt="Touch Exercise Gameplay" width="400"/>
+<img src="./Android/App%20screenshots/History all.PNG" alt="History Records" width="400"/>
+
+### iOS
+<img src="./iOS/App screenshots/Exercise main.png" alt="App Front" width="400"/>
+<img src="./iOS/App screenshots/Touch options.png" alt="App Front" width="400"/>
+<img src="./iOS/App screenshots/Touch rep.png" alt="App Front" width="400"/>
+<img src="./iOS/App screenshots/History all.png" alt="Android App Front" width="400"/>
