@@ -6,19 +6,19 @@ This is a simple mobile app aimed at helping stroke patients recover their motor
 There are a prototype, designed using Balsamiq Wireframe, and 2 versions of this app (Android and iOS). Both versions use Firebase to store patients' data and progress.
 
 ### Scope
-- Given the constrained range of motion and cognitive function often experienced by stroke patients, the app was designed with the presumption that their caregiver will navigate th interface. The patients' interaction is primarily focused on engaging with the exercises.
-- The app was designed for a single user - one patient using the app exclusively. It does not incorporate login or user switching features, and the database stores data for the individual user.
+- Given the constrained range of motion and cognitive function often experienced by stroke patients, the app was designed with the presumption that their caregiver will navigate the interface. The patients' interaction is primarily focused on engaging with the exercises.
+- The app was designed for a single user - one patient using the app exclusively. It does not incorporate login or user-switching features, and the database stores data for the individual user.
 - Responsive design was not taken into account; both Android and iOS versions were designed for specific device dimensions.
 
 
 ## 2. Features
 There are 2 distinct exercises in the app:
-1. "Touch" exercise: the user is prompted to tap three buttons labeled as 1, 2, and 3 in the correct **ascending sequence**. In each iteration, all three buttons are displayed simultaneously in random positions on the screen. Accurately tapping the correct button removes it from view. Successfully completion of tapping all three buttons sequentially counts as one "repetition", leading to the next "repetition". 
-2. "Hold": the exercise is similar to the "Touch" exercise, with a variation: Instead of tapping, the user is required to tap and hold down the correct button for a duration of 3 seconds to register success and remove it from the screen.
+1. "Touch" exercise: the user is prompted to tap three buttons labelled 1, 2, and 3 in the correct **ascending sequence**. In each iteration, all three buttons are displayed simultaneously in random positions on the screen. Accurately tapping the correct button removes it from view. Successfully completion of tapping all three buttons sequentially counts as one "repetition", leading to the next "repetition". 
+2. "Hold": the exercise is similar to the "Touch" exercise, with a variation: Instead of tapping, the user must tap and hold down the correct button for 3 seconds to register success and remove it from the screen.
 
 - For each exercise, there are:
   -  2 **modes**:
-      - Goal Mode: the user can set a objective to complete, choosing either a specific number of repetitions or a time limit for the exercise
+      - Goal Mode: the user can set an objective to complete, choosing either a specific number of repetitions or a time limit for the exercise
       - Free-Play Mode: the user can engage in unlimited practice sessions
 
   - A variety of **exercise customisation options**, including:
